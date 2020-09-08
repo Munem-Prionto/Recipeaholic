@@ -1,0 +1,24 @@
+
+.dish {
+    color: black;
+    padding: 2rem 0rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap : 1rem;
+
+    a {
+        text-decoration: underline;;
+    }
+
+    img {
+
+        border: .5rem solid $second-color;
+    }
+    &__inst {
+        padding: 3rem 0rem;
+    }
+    &__vid {
+       padding: 1rem 0rem;
+    }
+
+}

@@ -1,0 +1,26 @@
+.category {
+    &__heading {
+        text-align: center;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 1rem;
+    }
+    &__img__div {
+        width: 70%;
+        margin: auto;
+    }
+   img {
+       border-radius: 2rem;
+       
+   
+       transition: all .1s;
+       &:hover {
+        border: .5rem solid $second-color;
+        }
+    }
+}

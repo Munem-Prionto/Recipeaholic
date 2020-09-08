@@ -1,0 +1,107 @@
+.nav {
+    color: $main-font-color;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    border-bottom: .5rem solid $second-color;
+    background-color: $first-color;
+    
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        z-index: 2;
+        font-size: 2rem;
+    }
+
+    &__links__div {
+        /* border: 2px solid rebeccapurple; */
+        padding : 0rem 2rem ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+    }
+    &__links {
+        color: $main-font-color;
+        text-decoration: none;
+        padding : .5rem 1rem ;
+        margin: 0rem 1rem;
+        transition: all .1s;
+        
+
+        &:hover {
+            border: 3px solid $second-color;
+
+        }
+    }
+    &__mobile-nav__btn {
+        z-index: 2;
+        display: none;
+        right:  0;
+        align-items: center;
+        justify-content: space-between;
+
+        i {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    &__mobile-nav {
+        opacity: .9;
+        display: none;
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0%;
+        height: 100%;
+        transition: all 1s;
+        background-color: $second-color;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        text-align: center;
+
+
+
+    }
+
+    &__m__sideNav {
+        
+        width: 0%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        &__links__div {
+            display: none;
+        }
+
+        &__mobile-nav__btn {
+            display: flex; 
+        }
+        &__mobile-nav  {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; 
+            text-align: center;
+        }
+
+        &__m__sideNav {
+            width: 35%;
+        }
+    }
+
+}

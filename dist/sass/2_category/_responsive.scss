@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 1050px) {
+    .category {
+        &__grid {
+            grid-template-columns: repeat(3 , 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .category {
+        &__grid {
+            grid-template-columns: repeat(2 , 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .category {
+        &__grid {
+            grid-template-columns: repeat(1 , 1fr);
+        }
+    }
+
+
+}

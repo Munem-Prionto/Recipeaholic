@@ -1,0 +1,30 @@
+
+.dishes {
+
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    font-size:  1.1rem;
+    gap: 1rem;
+    padding: 2rem 0rem;
+
+
+    &__heading {
+        text-align: center;  
+    }
+    a {
+        color: $second-font-color;
+    }
+
+    &__item {
+        
+        padding: .5rem .2rem;
+        background-color: $second-color;
+
+        transition: all .1s;
+        &:hover {
+            border: .5rem solid $second-color;
+        }
+        /* border: .5rem solid $second-color; */
+    }
+}
+

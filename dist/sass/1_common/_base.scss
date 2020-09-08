@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+}
+
+body {
+    
+    font-size: 1rem;
+    color: $second-color;
+    background-color: $first-color;
+/*     color: $first-color;
+    background-color: $second-color; */
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: $main-font-color;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+
+.container {
+  
+    padding: 8rem 0rem 3rem 0rem;
+    width: 80%;
+    margin: auto;
+}
+
+.footer {
+    display: none;
+    padding: 3rem 0rem;
+    text-align: center;
+    color: white;
+    background-color: $second-color;
+} 
+
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: $first-color;
+  }
+  
+  ::selection {
+    color:$first-color;
+    background: black;
+  }
+
+  .displayNone {
+      display: none;
+  }
