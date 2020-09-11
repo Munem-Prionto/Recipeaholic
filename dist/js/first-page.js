@@ -10,7 +10,7 @@ category_list()
     .then(data => {
    
         const filterCategory = data.categories.filter(category => {
-            if(category.strCategory === 'Pork' || category.strCategory === 'Miscellaneous') {
+            if(category.strCategory === 'Pork' || category.strCategory === 'Miscellaneous' || category.strCategory === 'Goat') {
                 return false;
             }else {
                 return true
