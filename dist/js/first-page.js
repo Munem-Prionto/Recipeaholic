@@ -30,8 +30,7 @@ category_list()
             `;
         }) 
 
-        const footer = document.querySelector('.footer')
-        footer.style.display = 'block';
+
     })
 
     category__grid.addEventListener('click' , e=> {

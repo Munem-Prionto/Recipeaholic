@@ -52,15 +52,11 @@ mealById(mealId)
         <iframe  src="https://www.youtube.com/embed/${embedLink}?controls=1">
         </iframe> */
 
-        dish__vid.innerHTML = `
-        
-        <a href="${yTlink}" target="_blank"><h2>Click to watch a Video Tutorial</h2></a>
-        `;
+        dish__vid.innerHTML = `<a href="${yTlink}" target="_blank"><h2>Video Tutorial</h2></a>`;
 
 
  
-    const footer = document.querySelector('.footer')
-    footer.style.display = 'block';
+
         
     });
 

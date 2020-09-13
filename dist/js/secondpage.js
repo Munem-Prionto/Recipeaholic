@@ -23,8 +23,7 @@ dishes__heading.textContent = localStorage.getItem('currentCategory');
 
         })
 
-        const footer = document.querySelector('.footer')
-        footer.style.display = 'block';
+
     }) 
 
     container.addEventListener('click' , e=> {

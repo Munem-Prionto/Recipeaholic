@@ -8,14 +8,17 @@
 }
 
 body {
-    
+    position: relative;
+    min-height: 100vh;
     font-size: 1rem;
     color: $second-color;
     background-color: $first-color;
 /*     color: $first-color;
     background-color: $second-color; */
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 3rem;
 }
+
 a {
     color: $main-font-color;
     text-decoration: none;
@@ -25,19 +28,24 @@ img {
 }
 
 .container {
-  
     padding: 8rem 0rem 3rem 0rem;
     width: 80%;
     margin: auto;
 }
 
 .footer {
-    display: none;
-    padding: 3rem 0rem;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    padding: 1rem 0rem;
     text-align: center;
     color: white;
     background-color: $second-color;
 } 
+.logo {
+    font-family: 'Lobster', cursive;
+}
 
 
 ::-moz-selection { /* Code for Firefox */
@@ -52,4 +60,21 @@ img {
 
   .displayNone {
       display: none;
+  }
+  .yellow {
+      color: $first-color;
+  }
+
+    //FOR TAB
+    @media only screen and (max-width: 750px) {
+        :root {
+            font-size: 15px;
+        }
+      }
+
+  //FOR MOBILE
+  @media only screen and (max-width: 450px) {
+    :root {
+        font-size: 13px;
+    }
   }

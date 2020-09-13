@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipeaholic</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/main.css">
+
+
+    <link rel="stylesheet" href="./css/contact.css">
+
 
 </head>
 <body>
@@ -37,30 +39,40 @@
 
 
     <div class="container">
-        <div class="category__list__div"></div>
-        <section class="category">
-
-            <h1 class="category__heading">Categories</h1>
-            <div class="category__grid">
-                
-                <div class="category__img__div">
-                    <a href="#" class="category__img"></a> 
+        <h1 class="contact__heading">Contact Us</h1>
+        <section class="contact">
+            
+            <form method="POST" class="contact__form" data-netlify="true" action="./contact.html">
+                <div class="contact__name">
+                    <input type="text" name="name" placeholder="Full Name" required id="name">
                 </div>
-
-
-            </div>
+                <div class="contact__email">
+                    <input type="email" name="email" placeholder="Email" required id="email">
+                </div>
+                    
+                <div class="contact__textarea">
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </div>
+                    
+                <div class="field">
+                    <div class="reCAPTCHA" data-netlify-recaptcha="true"></div>
+                </div>
+                <div class="contact__btn">
+                    <button>Submit</button>
+                </div>
+                
+            </form>
         </section>
+
     </div>
+        
 
     <footer class="footer" id="foot">
         <p>Designed <span class="yellow">&</span> Developed by Munem Prionto</p>
     </footer>
 
 
-
     <script src="./js/app.js"></script>
-    <script src="./js/common.js"></script>
-    <script src="./js/first-page.js"></script>
-    
+
 </body>
 </html>
